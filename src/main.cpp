@@ -9,21 +9,25 @@ int main() {
   cout << "2 - Nombre de places disponibles \n";
   cout << "3 - Sortie du parking \n";
   cout << "4 - Quitter \n";
-  cin >> choix;
-  switch(choix){
-    case 1:
-      cout << "Entrée";
-      break;
-    case 2:
-      cout << "Nb";
-      break;
-    case 3:
-      cout << "Sortie";
-      break;
-    case 4:
-      cout << "Quitter";
-      break;
-    default: cout << "Choisissez un chiffre entre 1 et 4";
-  }
+  
+    do{
+      cin >> choix;
+      switch(choix){
+        case 1:
+          cout << "Entrée";
+          break;
+        case 2:
+          cout << "Nb";
+          break;
+        case 3:
+          cout << "Sortie";
+          break;
+        case 4:
+          cout << "Quitter";
+          break;
+        default: cout << "Choisissez un chiffre entre 1 et 4";
+        break;  
+      }
+    }while(choix != 4);
   return 0;
 }
