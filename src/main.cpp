@@ -14,16 +14,18 @@ int main() {
       cin >> choix;
       switch(choix){
         case 1:
+          nbPlaces--;
           cout << "Entrée";
           break;
         case 2:
-          cout << "Nb";
+          cout << "Il y a " + to_string(nbPlaces) +" places restantes";
           break;
         case 3:
+          nbPlaces++;
           cout << "Sortie";
           break;
         case 4:
-          cout << "Quitter";
+          cout << "Au revoir \n";
           break;
         default: cout << "Choisissez un chiffre entre 1 et 4";
         break;  
